@@ -71,8 +71,8 @@ class ModDockerMain(object):
                     
                 archives.append("mods/{}/game/{}".format(self.mod_name, base))
             
-            if os.path.exists(os.path.join(renpy.config.basedir, "game", "mod_patches.rpa")):
-                archives.append("mod_patches")
+        if os.path.exists(os.path.join(renpy.config.basedir, "game", "mod_patches.rpa")):
+            archives.append("mod_patches")
 
         archives.reverse()
 
